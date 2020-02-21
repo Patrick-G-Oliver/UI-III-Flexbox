@@ -63,10 +63,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* My code starts here... */
 
 @media screen and (min-width: 1024px)  {
-	h1 {
+	nav {
 		border: 2px solid red;
 	}
 }
@@ -74,9 +74,10 @@ h1, h2, h3, h4, h5 {
 body {
 	width: 90%;
 	margin: 0 auto;
+	line-height: 1.25;
 }
 
-header {
+.navigation {
 	display: flex;
 	justify-content: space-between;
 }
@@ -84,85 +85,95 @@ header {
 nav {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 35px;
+	padding-top: 45px;
 	width: 70%;
 }
 
-header img {
-	padding-top: 25px;
-}
-
-a {
-	width: 15%;
-	text-align: center;
+nav a {
+	width: 10%;
+	text-align: left;
 	text-decoration: none;
-	color: #a7a7a7;
+	color: rgb(167, 167, 167);
 }
 
-.upper-section {
-	display: flex;
-	justify-content: space-between;
-	height: 450px;
-	margin-bottom: 25px;
+.logo {
+	padding: 25px 0;
 }
 
-.upper-section div {
-	width: 48%;
-	padding-top: 100px;
-	margin-left: 50px;
-	text-align: center;
+.services-header-img {
+	width: 100%
 }
 
-.upper-section img {
-	height: 370px;
-	margin-top: 55px;
-	padding-bottom: 20px;
+.services-headline {
+	padding: 25px 0;
 }
 
 h1 {
-	font-size: 80px;
-	padding: 0px;
+	font-size: 25px;
+}
+
+.services-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	
+	margin: 20px 0;
+}
+
+.services-menu div {
+	background-color:  rgb(242, 241, 242);
+	width: 430px;
+	padding: 25px;
+}
+
+.left-menu-div {
+	margin: 20px 20px 20px 0;
+	border: solid 1px;
+}
+
+.right-menu-div {
+	margin: 20px 0 20px 20px;
+	border: solid 1px;
 }
 
 button {
-	font-size: 15px;
-	width: 170px;
-	padding: 5px;
-	background: none;
+	width: 150px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-top: 20px;
 }
 
-.middle-section {
+.lower-hr {
+	border: solid 1px;
+}
+
+.fact-section {
 	display: flex;
 	justify-content: space-between;
+	padding: 30px 0;
 }
 
-.middle-section div {
-	width: 49.5%;
-	padding: 35px 0;
+.fact-section div {
+	width: 45%;
 }
 
-.middle-img {
-	width: 98%;
-	height: 175px;
-	margin: auto;
+ul {
+	list-style-type: square;
+	padding: 20px;
 }
 
-.lower-section {
-	display: flex;
-	justify-content: space-between;
-}
-
-.lower-section div {
-	width: 31%;
-	padding: 35px 0;
-}
-
-.contact-section {
-	padding: 35px 0px;
+li {
+	line-height: 1.75;
 }
 
 footer {
 	text-align: center;
-	padding: 35px 0 125px 0;
+	padding: 60px 0 20px 0;
 }
+
+
+
+
+
 
